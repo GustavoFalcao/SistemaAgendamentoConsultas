@@ -1,0 +1,9 @@
+public static void cadastrarMedico(Medico m, Usuario u) {
+    if (!u.isAdmin()) {
+        System.out.println("Apenas administradores podem cadastrar médicos.");
+        return;
+    }
+
+    medicos.add(m);
+    Log.registrar(u.getUsername(), "Cadastro de médico: " + m.getNome());
+}

@@ -1,0 +1,32 @@
+public class Consulta {
+    private Paciente paciente;
+    private Medico medico;
+    private String data;
+    private String horario;
+    private boolean ativa; // para controle de cancelamento
+
+    public Consulta(Paciente paciente, Medico medico, String data, String horario) {
+        this.paciente = paciente;
+        this.medico = medico;
+        this.data = data;
+        this.horario = horario;
+        this.ativa = true;
+    }
+
+    public void cancelar() {
+        this.ativa = false;
+    }
+
+    public boolean isAtiva() {
+        return ativa;
+    }
+
+    @Override
+    public String toString() {
+        return "Paciente: " + paciente.getNome() +
+               " | Médico: " + medico.getNome() +
+               " | Data: " + data +
+               " | Horário: " + horario +
+               " | Status: " + (ativa ? "Ativa" : "Cancelada");
+    }
+}

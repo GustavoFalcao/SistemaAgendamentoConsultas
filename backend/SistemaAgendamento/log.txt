@@ -1,0 +1,45 @@
+[2026-01-29T22:18:07.736073900] user - Login no sistema
+[2026-01-29T22:19:20.010317] user - Cadastro de paciente: Gustavo
+[2026-01-29T22:19:45.395554500] user - Cadastro de médico: Whebert
+[2026-01-29T22:20:22.134331400] user - Agendamento de consulta
+[2026-01-30T16:36:54.236888200] admin - Login no sistema
+[2026-01-30T16:37:03.046106300] admin - Logout
+[2026-01-30T16:37:45.402229] user - Login no sistema
+[2026-01-30T16:39:20.297384] user - Cadastro de paciente: 0
+[2026-01-30T16:39:25.658484800] admin - Login no sistema
+[2026-01-30T16:39:31.148857900] admin - Cadastro de paciente: Gusta
+[2026-01-30T16:39:39.219527600] admin - Cadastro de médico: Luca
+[2026-01-30T16:39:43.918875500] admin - Agendamento de consulta
+[2026-01-30 17:10] user - Login no sistema
+[2026-01-30 17:11] user - Cadastro de paciente: Gustavo
+[2026-01-30 17:11] user - Cadastro de médico: Dentinho
+[2026-01-30 17:11] user - Consulta agendada
+[2026-01-30 17:11] user - Logout
+[2026-01-30 17:11] user - Login no sistema
+[2026-01-30 17:11] user - Logout
+[2026-01-30 17:12] admin - Login no sistema
+[2026-01-30 17:12] admin - Cadastro de paciente: Gusta
+[2026-01-30 17:12] admin - Cadastro de médico: Rafa
+[2026-01-30 17:12] admin - Consulta agendada
+[2026-01-30 17:12] admin - Consulta agendada
+[2026-01-30 17:13] admin - Cadastro de médico: Tiago
+[2026-01-30 17:13] admin - Consulta agendada
+[2026-01-30 17:13] admin - Consulta cancelada
+[2026-01-30 17:13] admin - Consulta cancelada
+[2026-01-30 17:13] admin - Consulta cancelada
+[2026-01-30 17:23] user - Login no sistema
+[2026-01-30 17:23] user - Cadastro de paciente: 123
+[2026-01-30 17:24] user - Cadastro de paciente: Gusta
+[2026-01-30 17:24] user - Cadastro de médico: Gustavo
+[2026-01-30 17:24] user - Cadastro de médico: Teteu
+[2026-01-30 17:24] user - Consulta agendada
+[2026-01-30 17:25] user - Consulta agendada
+[2026-01-30 17:25] user - Logout
+[2026-01-30 17:25] admin - Login no sistema
+[2026-01-30 17:25] admin - Logout
+[2026-01-30 17:25] user - Login no sistema
+[2026-01-30 22:20] user - Login no sistema
+[2026-01-30 22:21] user - Cadastro de paciente: Gustavo
+[2026-01-30 22:21] user - Cadastro de médico: Tiago
+[2026-01-30 22:33] user - Login no sistema
+[2026-01-30 22:33] admin - Login no sistema

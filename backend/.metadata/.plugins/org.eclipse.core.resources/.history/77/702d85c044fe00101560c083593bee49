@@ -1,0 +1,83 @@
+import java.util.ArrayList;
+
+// Classe que contém as regras de negócio
+public class Sistema {
+
+    public static ArrayList<Paciente> pacientes = new ArrayList<>();
+    public static ArrayList<Medico> medicos = new ArrayList<>();
+    public static ArrayList<Consulta> consultas = new ArrayList<>();
+
+    // ===== CRUD PACIENTE =====
+
+    // CREATE
+    public static void cadastrarPaciente(Paciente p, Usuario u) {
+        pacientes.add(p);
+        Log.registrar(u.getUsername(), "Cadastro de paciente: " + p.getNome());
+    }
+
+    // READ
+    public static void listarPacientes() {
+        for (int i = 0; i < pacientes.size(); i++) {
+            System.out.println(i + " - " + pacientes.get(i));
+        }
+    }
+
+    // DELETE
+    public static void removerPaciente(int index, Usuario u) {
+        if (!u.isAdmin()) {
+            System.out.println("Apenas administradores.");
+            return;
+        }
+        Paciente p = pacientes.remove(index);
+        Log.registrar(u.getUsername(), "Remoção de paciente: " + p.getNome());
+    }
+
+    // ===== CRUD MÉDICO =====
+
+    // CREATE
+    public static void cadastrarMedico(Medico m, Usuario u) {
+        medicos.add(m);
+        Log.registrar(u.getUsername(), "Cadastro de médico: " + m.getNome());
+    }
+
+    // READ
+    public static void listarMedicos() {
+        for (Medico m : medicos) {
+            System.out.println(m);
+        }
+    }
+
+    // ===== CONSULTAS =====
+
+    // CREATE
+    public static void agendarConsulta(Consulta c, Usuario u) {
+        consultas.add(c);
+        Log.registrar(u.getUsername(), "Consulta agendada");
+    }
+
+    // READ
+    public static void listarConsultas() {
+        for (Consulta c : consultas) {
+            System.out.println(c);
+        }
+    }
+
+    // Relatório por período
+    public static void listarConsultasPorData(String data) {
+        for (Consulta c : consultas) {
+            if (c.getData().equals(data)) {
+                System.out.println(c);
+            }
+        }
+    }
+
+    // DELETE (cancelamento)
+    public static void cancelarConsulta(int index, Usuario u) {
+        if (!u.isAdmin()) {
+            System.out.println("Apenas administradores.");
+            return;
+        }
+        consultas.get(index).cancelar();
+        Log.registrar(u.getUsername(), "Consulta cancelada");
+    }
+}

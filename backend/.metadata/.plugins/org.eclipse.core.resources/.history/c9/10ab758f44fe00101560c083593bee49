@@ -1,0 +1,9 @@
+public static void removerPaciente(int index, Usuario u) {
+    if (!u.isAdmin()) {
+        System.out.println("Apenas administradores podem remover pacientes.");
+        return;
+    }
+
+    Paciente p = pacientes.remove(index);
+    Log.registrar(u.getUsername(), "Remoção de paciente: " + p.getNome());
+}

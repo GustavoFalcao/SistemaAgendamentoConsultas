@@ -1,0 +1,24 @@
+// Classe base para todos os usuários do sistema
+public class Usuario {
+    protected String username;
+    protected String senha;
+
+    public Usuario(String username, String senha) {
+        this.username = username;
+        this.senha = senha;
+    }
+
+    // Método usado no login
+    public boolean autenticar(String user, String pass) {
+        return username.equals(user) && senha.equals(pass);
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    // Será sobrescrito (polimorfismo)
+    public boolean isAdmin() {
+        return false;
+    }
+}

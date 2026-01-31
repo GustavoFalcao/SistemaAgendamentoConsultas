@@ -1,0 +1,77 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Usuários fixos para teste
+        Usuario admin = new Administrador("admin", "123");
+        Usuario operador = new Operador("user", "123");
+
+        System.out.println("=== SISTEMA DE AGENDAMENTO ===");
+        System.out.print("Usuário: ");
+        String u = sc.nextLine();
+        System.out.print("Senha: ");
+        String s = sc.nextLine();
+
+        Usuario logado = null;
+
+        if (admin.autenticar(u, s)) logado = admin;
+        else if (operador.autenticar(u, s)) logado = operador;
+
+        if (logado == null) {
+            System.out.println("Login inválido.");
+            return;
+        }
+
+        Log.registrar(logado.getUsername(), "Login no sistema");
+
+        int op;
+        do {
+            System.out.println("\n1 - Cadastrar paciente");
+            System.out.println("2 - Cadastrar médico");
+            System.out.println("3 - Agendar consulta");
+            System.out.println("4 - Listar consultas");
+            System.out.println("0 - Sair");
+            op = sc.nextInt();
+            sc.nextLine();
+
+            switch (op) {
+                case 1:
+                    System.out.print("Nome do paciente: ");
+                    String np = sc.nextLine();
+                    System.out.print("CPF: ");
+                    String cpf = sc.nextLine();
+                    Sistema.cadastrarPaciente(new Paciente(np, cpf), logado);
+                    break;
+
+                case 2:
+                    System.out.print("Nome do médico: ");
+                    String nm = sc.nextLine();
+                    System.out.print("Especialidade: ");
+                    String esp = sc.nextLine();
+                    Sistema.cadastrarMedico(new Medico(nm, esp), logado);
+                    break;
+
+                case 3:
+                    Paciente p = Sistema.pacientes.get(0);
+                    Medico m = Sistema.medicos.get(0);
+                    System.out.print("Data da consulta: ");
+                    String data = sc.nextLine();
+                    Sistema.agendarConsulta(new Consulta(p, m, data), logado);
+                    break;
+
+                case 4:
+                    for (Consulta c : Sistema.consultas) {
+                        System.out.println(c);
+                    }
+                    break;
+            }
+
+        } while (op != 0);
+
+        Log.registrar(logado.getUsername(), "Logout");
+        sc.close();
+    }
+}

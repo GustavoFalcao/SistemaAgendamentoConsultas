@@ -1,0 +1,18 @@
+import java.io.FileWriter;
+import java.io.IOException;
+import java.time.LocalDateTime;
+
+// Classe responsável por gravar logs
+public class Log {
+
+    public static void registrar(String usuario, String acao) {
+        try {
+            FileWriter fw = new FileWriter("log.txt", true);
+            fw.write("[" + LocalDateTime.now() + "] "
+                    + usuario + " - " + acao + "\n");
+            fw.close();
+        } catch (IOException e) {
+            System.out.println("Erro ao registrar log.");
+        }
+    }
+}

@@ -1,0 +1,24 @@
+import java.io.FileWriter;
+import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class Log {
+
+    public static void registrar(String usuario, String acao) {
+        try {
+            FileWriter fw = new FileWriter("log.txt", true);
+
+            DateTimeFormatter fmt =
+                DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+
+            String dataHora = LocalDateTime.now().format(fmt);
+
+            fw.write("[" + dataHora + "] " + usuario + " - " + acao + "\n");
+            fw.close();
+
+        } catch (IOException e) {
+            System.out.println("Erro ao registrar log.");
+        }
+    }
+}

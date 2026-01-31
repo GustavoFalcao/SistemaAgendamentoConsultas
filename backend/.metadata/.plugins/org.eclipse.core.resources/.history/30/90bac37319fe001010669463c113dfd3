@@ -1,0 +1,21 @@
+public class Usuario {
+    protected String username;
+    protected String senha;
+
+    public Usuario(String username, String senha) {
+        this.username = username;
+        this.senha = senha;
+    }
+
+    public boolean autenticar(String u, String s) {
+        return username.equals(u) && senha.equals(s);
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public boolean isAdmin() {
+        return false;
+    }
+}
