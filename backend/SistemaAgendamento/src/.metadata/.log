@@ -1,0 +1,92 @@
+!SESSION 2026-01-30 22:56:39.580 -----------------------------------------------
+eclipse.buildId=4.37.0.20250905-1455
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data C:\Users\GUGA\Desktop\Projetos Pessoais\SistemaAgendamentoConsultas\backend\SistemaAgendamento\src
+
+!ENTRY ch.qos.logback.classic 1 0 2026-01-30 22:56:41.625
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2026-01-30 22:56:41.794
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (615) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2026-01-30 22:56:42.497
+!MESSAGE Logback config file: C:\Users\GUGA\Desktop\Projetos Pessoais\SistemaAgendamentoConsultas\backend\SistemaAgendamento\src\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-01-30 22:56:46.915
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\GUGA'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2026-01-30 23:02:25.000 -----------------------------------------------
+eclipse.buildId=4.37.0.20250905-1455
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data C:\Users\GUGA\Desktop\Projetos Pessoais\SistemaAgendamentoConsultas\backend\SistemaAgendamento\src
+
+!ENTRY ch.qos.logback.classic 1 0 2026-01-30 23:02:27.023
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2026-01-30 23:02:27.162
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (615) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2026-01-30 23:02:27.913
+!MESSAGE Logback config file: C:\Users\GUGA\Desktop\Projetos Pessoais\SistemaAgendamentoConsultas\backend\SistemaAgendamento\src\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-01-30 23:02:31.577
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\GUGA'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2026-02-01 19:05:20.394 -----------------------------------------------
+eclipse.buildId=4.37.0.20250905-1455
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2026-02-01 19:05:22.767
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2026-02-01 19:05:22.933
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (615) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2026-02-01 19:10:46.037
+!MESSAGE Logback config file: C:\Users\GUGA\Desktop\Projetos Pessoais\SistemaAgendamentoConsultas\backend\SistemaAgendamento\src\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-02-01 19:10:50.493
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\GUGA'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2026-02-01 23:39:23.614 -----------------------------------------------
+eclipse.buildId=4.37.0.20250905-1455
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data C:\Users\GUGA\Desktop\Projetos Pessoais\SistemaAgendamentoConsultas\backend\SistemaAgendamento\src
+
+!ENTRY ch.qos.logback.classic 1 0 2026-02-01 23:39:25.574
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2026-02-01 23:39:25.701
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (615) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2026-02-01 23:39:26.387
+!MESSAGE Logback config file: C:\Users\GUGA\Desktop\Projetos Pessoais\SistemaAgendamentoConsultas\backend\SistemaAgendamento\src\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-02-01 23:39:30.844
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\GUGA'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

@@ -43,3 +43,22 @@
 [2026-01-30 22:21] user - Cadastro de médico: Tiago
 [2026-01-30 22:33] user - Login no sistema
 [2026-01-30 22:33] admin - Login no sistema
+[2026-02-01 23:45] user - Login no sistema
+[2026-02-01 23:47] user - Login no sistema
+[2026-02-01 23:47] user - Login no sistema
+[2026-02-01 23:53] admin - Login no sistema
+[2026-02-01 23:57] user - Login no sistema
+[2026-02-02 00:01] user - Login no sistema
+[2026-02-02 00:03] user - Login no sistema
+[2026-02-02 00:03] user - Consulta agendada
+[2026-02-02 00:06] user - Login no sistema
+[2026-02-02 00:06] admin - Login no sistema
+[2026-02-02 00:07] user - Login no sistema
+[2026-02-02 00:09] user - Login no sistema
+[2026-02-02 00:10] admin - Login no sistema
+[2026-02-02 00:12] admin - Login no sistema
+[2026-02-02 00:13] admin - Consulta agendada
+[2026-02-02 00:13] admin - Consulta cancelada
+[2026-02-02 00:14] admin - Login no sistema
+[2026-02-02 00:14] admin - Remoção de paciente: João da Silva
+[2026-02-02 00:15] user - Login no sistema

@@ -11,6 +11,13 @@ public class Main {
         Usuario admin = new Administrador("admin", "123");
         Usuario operador = new Operador("user", "123");
 
+     // Dados iniciais (simulação de banco de dados)
+        Sistema.pacientes.add(new Paciente("João da Silva", "12345678901"));
+        Sistema.pacientes.add(new Paciente("Maria Oliveira", "10987654321"));
+
+        Sistema.medicos.add(new Medico("Dr. Carlos", "Clínico Geral"));
+        Sistema.medicos.add(new Medico("Dra. Ana", "Pediatria"));
+        
         // Login
         System.out.print("Usuário: ");
         String u = sc.nextLine();
@@ -44,10 +51,8 @@ public class Main {
                 System.out.println("9 - Cancelar consulta");
                 System.out.println("0 - Sair");
             } else {
-                System.out.println("\n1 - Listar pacientes");
-                System.out.println("2 - Listar médicos");
-                System.out.println("3 - Agendar consulta");
-                System.out.println("4 - Listar consultas");
+                System.out.println("\n1 - Agendar consulta");
+                System.out.println("2 - Listar consultas");
                 System.out.println("0 - Sair");
             }
 
@@ -98,14 +103,36 @@ public class Main {
                         break;
 
                     case 7:
+                        // Validação: precisa existir paciente e médico
+                        if (Sistema.pacientes.isEmpty() || Sistema.medicos.isEmpty()) {
+                            System.out.println("Não é possível agendar consulta.");
+                            System.out.println("É necessário ter paciente e médico cadastrados.");
+                            break;
+                        }
+
+                        // Escolher paciente
+                        System.out.println("Escolha o paciente:");
+                        Sistema.listarPacientes();
+                        int idxPaciente = sc.nextInt();
+                        sc.nextLine();
+                        Paciente p = Sistema.pacientes.get(idxPaciente);
+
+                        // Escolher médico
+                        System.out.println("Escolha o médico:");
+                        Sistema.listarMedicos();
+                        int idxMedico = sc.nextInt();
+                        sc.nextLine();
+                        Medico m = Sistema.medicos.get(idxMedico);
+
+                        // Informar data e horário
                         System.out.print("Data: ");
                         String data = sc.nextLine();
+
                         System.out.print("Horário: ");
                         String horario = sc.nextLine();
-                        Consulta c = new Consulta(
-                            Sistema.pacientes.get(0),
-                            Sistema.medicos.get(0),
-                            data, horario);
+
+                        // Criar e agendar consulta
+                        Consulta c = new Consulta(p, m, data, horario);
                         Sistema.agendarConsulta(c, logado);
                         break;
 
@@ -124,28 +151,42 @@ public class Main {
             } 
             // USUÁRIO COMUM
             else {
-                switch (op) {
+                switch (op) {                  
                     case 1:
+                        // Validação: precisa existir paciente e médico
+                        if (Sistema.pacientes.isEmpty() || Sistema.medicos.isEmpty()) {
+                            System.out.println("Não é possível agendar consulta.");
+                            System.out.println("É necessário ter paciente e médico cadastrados.");
+                            break;
+                        }
+
+                        // Escolher paciente
+                        System.out.println("Escolha o paciente:");
                         Sistema.listarPacientes();
-                        break;
+                        int idxPaciente = sc.nextInt();
+                        sc.nextLine();
+                        Paciente p = Sistema.pacientes.get(idxPaciente);
 
-                    case 2:
+                        // Escolher médico
+                        System.out.println("Escolha o médico:");
                         Sistema.listarMedicos();
-                        break;
+                        int idxMedico = sc.nextInt();
+                        sc.nextLine();
+                        Medico m = Sistema.medicos.get(idxMedico);
 
-                    case 3:
+                        // Informar data e horário
                         System.out.print("Data: ");
                         String data = sc.nextLine();
+
                         System.out.print("Horário: ");
                         String horario = sc.nextLine();
-                        Consulta c = new Consulta(
-                            Sistema.pacientes.get(0),
-                            Sistema.medicos.get(0),
-                            data, horario);
+
+                        // Criar e agendar consulta
+                        Consulta c = new Consulta(p, m, data, horario);
                         Sistema.agendarConsulta(c, logado);
                         break;
 
-                    case 4:
+                    case 2:
                         Sistema.listarConsultas();
                         break;
                 }
