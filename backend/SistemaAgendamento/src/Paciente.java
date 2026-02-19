@@ -19,7 +19,7 @@ public class Paciente {
         return cpf;
     }
 
-    // Atualização de dados (UPDATE)
+    // Atualização de dados
     public void alterarNome(String novoNome) {
         this.nome = novoNome;
     }

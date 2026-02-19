@@ -11,7 +11,7 @@ public class Main {
         Usuario admin = new Administrador("admin", "123");
         Usuario operador = new Operador("user", "123");
 
-     // Dados iniciais (simulação de banco de dados)
+     // Dados iniciais (Simulação)
         Sistema.pacientes.add(new Paciente("João da Silva", "12345678901"));
         Sistema.pacientes.add(new Paciente("Maria Oliveira", "10987654321"));
 
@@ -38,7 +38,7 @@ public class Main {
 
         int op;
         do {
-            // MENU DINÂMICO POR PERFIL
+            // Menu
             if (logado.isAdmin()) {
                 System.out.println("\n1 - Cadastrar paciente");
                 System.out.println("2 - Listar pacientes");

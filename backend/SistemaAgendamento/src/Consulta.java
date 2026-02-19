@@ -16,7 +16,7 @@ public class Consulta {
         this.ativa = true;
     }
 
-    // Cancela a consulta (DELETE lógico)
+    // Cancela a consulta
     public void cancelar() {
         this.ativa = false;
     }

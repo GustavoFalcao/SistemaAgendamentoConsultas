@@ -1,13 +1,13 @@
 import java.util.ArrayList;
 
-// Classe que contém as regras de negócio
+// Classe com regras de negócio
 public class Sistema {
 
     public static ArrayList<Paciente> pacientes = new ArrayList<>();
     public static ArrayList<Medico> medicos = new ArrayList<>();
     public static ArrayList<Consulta> consultas = new ArrayList<>();
 
-    // ===== CRUD PACIENTE =====
+    // CRUD PACIENTE
 
     // CREATE - somente administrador
     public static void cadastrarPaciente(Paciente p, Usuario u) {
@@ -36,7 +36,7 @@ public class Sistema {
         Log.registrar(u.getUsername(), "Remoção de paciente: " + p.getNome());
     }
 
-    // ===== CRUD MÉDICO =====
+    // CRUD MÉDICO
 
     // CREATE - somente administrador
     public static void cadastrarMedico(Medico m, Usuario u) {
@@ -65,7 +65,7 @@ public class Sistema {
         Log.registrar(u.getUsername(), "Remoção de médico: " + m.getNome());
     }
 
-    // ===== CONSULTAS =====
+    // CONSULTAS
 
     // CREATE
     public static void agendarConsulta(Consulta c, Usuario u) {
@@ -89,7 +89,7 @@ public class Sistema {
         }
     }
 
-    // DELETE lógico (cancelamento) - somente administrador
+    // DELETE lógico - somente administrador
     public static void cancelarConsulta(int index, Usuario u) {
         if (!u.isAdmin()) {
             System.out.println("Apenas administradores podem cancelar consultas.");
